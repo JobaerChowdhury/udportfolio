@@ -33,6 +33,7 @@ header p span { font-size: 0.8em; font-weight: normal;}
 
 .contact-icon img {width:32px; height:32px; padding-right: 10px; vertical-align: middle;}
 .content { padding: 1em 1em; }
+.content .detail img {width: 100%;}
 .content li { list-style-type: none; font-size: 1.1em; padding-bottom: 10px;}
 li img { float:left; padding-right: 1em; width:115px;}
 li p { font-size: 0.9em; font-style: italic; }
