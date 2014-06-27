@@ -53,15 +53,11 @@
         li img { float:left; padding-right: 1em; width:115px;}
         li p { font-size: 0.9em; font-style: italic; }
 
-        .picture {width:30%; height:117px; padding:5px;float: left;}
+        .picture {position:relative;width:30%; height:117px; padding:5px;float: left;}
         .picture img {width:100%;}
+        .picture .overlay {color: white;position: absolute;bottom: 6px;left: 5px;width: 95%;background-color: rgba(0,0,0,0.6);display: inline-block;z-index: 2;}
         .showcase {margin-bottom: 20px;}
-        .clearfix:after {
-            content: " ";
-            display: block;
-            height: 0;
-            clear: both;
-        }
+        .clearfix:after {content: " ";display: block;height: 0;clear: both;}
 
         footer {
             padding: 0 0.5em;
@@ -163,23 +159,28 @@
     <div class="showcase clearfix">
         <h2>Learn more about the courses</h2>
         <div class="picture">
-          <a href="project-webperf.html"><img src="http://jobaexp-udport.rhcloud.com/img/webperf-small.jpg"></a>
+          <a href="project-webperf.html"><img height="115px" src="http://jobaexp-udport.rhcloud.com/img/webperf-small.jpg"></a>
+            <div class="overlay">Website Performance Optimization</div>
         </div>
 
         <div class="picture">
-          <a href="reactive.html"><img src="http://jobaexp-udport.rhcloud.com/img/reactive-small.jpg"></a>
+          <a href="reactive.html"><img height="115px" src="http://jobaexp-udport.rhcloud.com/img/reactive-small.jpg"></a>
+            <div class="overlay">Principles of Reactive Programming</div>
         </div>
 
         <div class="picture">
-          <a href="scala-fp.html"><img src="http://jobaexp-udport.rhcloud.com/img/fp-small.png"></a>
+          <a href="scala-fp.html"><img height="115px" src="http://jobaexp-udport.rhcloud.com/img/fp-small.png"></a>
+            <div class="overlay">Functional programming principles in Scala</div>
         </div>
 
         <div class="picture">
-            <a href="haskell-fp.html"><img src="http://jobaexp-udport.rhcloud.com/img/optimized-fp-haskell-small.jpg"></a>
+            <a href="haskell-fp.html"><img height="115px" src="http://jobaexp-udport.rhcloud.com/img/optimized-fp-haskell-small.jpg"></a>
+            <div class="overlay">Intro to Functional programming using Haskell</div>
         </div>
 
         <div class="picture">
-          <a href="algorithm-part2.html"><img src="http://jobaexp-udport.rhcloud.com/img/algo2-small.png"></a>
+          <a href="algorithm-part2.html"><img height="115px" src="http://jobaexp-udport.rhcloud.com/img/algo2-small.png"></a>
+            <div class="overlay">Algorithms: Design and Analysis</div>
         </div>
 
     </div>
