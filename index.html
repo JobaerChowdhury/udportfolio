@@ -53,6 +53,16 @@
         li img { float:left; padding-right: 1em; width:115px;}
         li p { font-size: 0.9em; font-style: italic; }
 
+        .picture {width:30%; height:117px; padding:5px;float: left;}
+        .picture img {width:100%;}
+        .showcase {margin-bottom: 20px;}
+        .clearfix:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
         footer {
             padding: 0 0.5em;
             border-top: 1px solid #ccc;
@@ -150,7 +160,32 @@
         </ul>
     </div>
 
+    <div class="showcase clearfix">
+        <h2>Learn more about the courses</h2>
+        <div class="picture">
+          <a href="project-webperf.html"><img src="http://jobaexp-udport.rhcloud.com/img/webperf-small.jpg"></a>
+        </div>
+
+        <div class="picture">
+          <a href="reactive.html"><img src="http://jobaexp-udport.rhcloud.com/img/reactive-small.jpg"></a>
+        </div>
+
+        <div class="picture">
+          <a href="scala-fp.html"><img src="http://jobaexp-udport.rhcloud.com/img/fp-small.png"></a>
+        </div>
+
+        <div class="picture">
+            <a href="haskell-fp.html"><img src="http://jobaexp-udport.rhcloud.com/img/optimized-fp-haskell-small.jpg"></a>
+        </div>
+
+        <div class="picture">
+          <a href="algorithm-part2.html"><img src="http://jobaexp-udport.rhcloud.com/img/algo2-small.png"></a>
+        </div>
+
+    </div>
+
 </div>
+
 <footer>
     <p>&copy; Jobaer Chowdhury 2014 <span id="crp-stats"></span></p>
 </footer>
